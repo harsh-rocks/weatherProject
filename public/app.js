@@ -8,7 +8,7 @@ var button= document.querySelector('.submit');
 
 
 button.addEventListener('click', function(name){
-fetch(`http://localserver:3000/${input.value}`)
+fetch("http://localhost:3000/"+input.value)
 .then(response => response.json())
 .then(data => {
   var tempValue = data['main']['temp'];
