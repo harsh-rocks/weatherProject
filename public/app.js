@@ -17,7 +17,7 @@ fetch("http://localhost:3000/"+input.value)
 
   main.innerHTML = nameValue;
   desc.innerHTML = "Desc - "+descValue;
-  temp.innerHTML = "Temp - "+tempValue;
+  temp.innerHTML = "Temp - "+tempValue+"°C";
   input.value ="";
 
 })

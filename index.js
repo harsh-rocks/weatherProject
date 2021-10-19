@@ -9,7 +9,7 @@ app.use(express.static(__dirname+"/public"));
 app.use(express.urlencoded({extended:true}));
 
 app.get("/:cityName",(req,res)=>{
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${req.params.cityName}&appid=${process.env.API_KEY}`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${req.params.cityName}&appid=${process.env.API_KEY}&units=metric`
     https.get(url,
     response=>{
         console.log(response.statusCode);
